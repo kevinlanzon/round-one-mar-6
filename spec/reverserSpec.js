@@ -13,5 +13,11 @@ describe('Reverser', function() {
     expect(worker.output).toEqual(21)
   });
 
+  it('should return 2123476284 when the input number is 4826743212', function() {
+    worker = new Reverser()
+    worker.makeReverse(2123476284);
+    expect(worker.output).toEqual(4826743212)
+  });
+
 
 });
